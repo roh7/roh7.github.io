@@ -1,9 +1,33 @@
+/* Custom CSS */
+
 
 body {
-	background-color: #1e88e5;
+	background-color: #C5CAE9; /* indigo lighten-2? */
+	
+	/* no text selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #bgImg {
+	border-radius: 50%;
 	margin-top: 1.2vh;
-	max-height: 85vh;
+	max-height: 75vh;
+	border: 2px solid #5C6BC0; /* indigo darken-2? */
+}
+
+.card-action a {
+	width: 40%;
+	margin: 2.5%;
+}
+
+@media screen and (max-width:600px) {
+	.card-action a {
+		width: 80%;
+		margin: 2.5%;
+	}
 }
