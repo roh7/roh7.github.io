@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://slides.com/virtenv/deck/fullscreen#/ -->
+<html class="sl-root decks fullscreen mz-applicationcache mz-history mz-localstorage mz-svg mz-opacity mz-rgba mz-backgroundsize mz-cssanimations mz-csstransforms mz-csstransforms3d mz-csstransitions mz-flexbox mz-flexboxlegacy mz-fullscreen loaded touch ua-windows ua-chrome has-visible-scrollbars fonts-are-ready reveal-is-ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>phensys: Slides</title>
+		<meta name="description" content="Slides">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link href="./index_files/slides-1df814f963530a8557bab503c81c1049.css" media="all" rel="stylesheet">
+		<link href="./index_files/application-d202e572391aa525c603ef5922a62010.css" media="all" rel="stylesheet">
+		<link href="./index_files/deck-v2-b50d15489798f38975e3f570617f3f6a.css" media="all" rel="stylesheet">
+
+
+
+<style id="user-css-output" type="text/css"></style>
+		<meta content="authenticity_token" name="csrf-param">
+<meta content="D5pXs3LGFUhCoFaIh7D9T3NvH3cnQMFY/zQ0FQMr17s=" name="csrf-token">
+		<script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+  if( !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', { 'userId': '298089' });
+    ga('send', 'pageview');
+
+  }
+</script>
+		<!--[if lt IE 9]>
+    <script src="//assets.slid.es/assets/html5shiv-b51d49ab0e89834a02ffce4a59905afb.js"></script>
+<![endif]-->
+	<link rel="stylesheet" href="./index_files/quicksand.css"><link rel="stylesheet" href="./index_files/opensans.css"><style type="text/css"></style><style></style></head>
+	<body class="reveal-viewport theme-font-quicksand theme-color-blue-yellow">
+		<div class="reveal concave ready" role="application" data-transition-speed="default" data-background-transition="concave">
+			<div class="slides" style="width: 960px; height: 700px; zoom: 1.273;">
+				<section data-id="50d77185d47550e9857e621423a8b9d3" class="present" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 839px; left: 46px; top: 263px; height: auto;" data-block-id="ea6421647447a6f305de83dde883773b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="color:#FFFFFF"><em><span style="font-size:1.0em">Physics Engines</span></em></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="131e35c9ec83490cc9ec1fe9387d04c9" style="min-width: 30px; min-height: 30px; width: 359px; height: 135.074px; left: 41px; top: 547px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1600" data-natural-height="602" src="./index_files/pasted-from-clipboard.png"></div></div>
+
+<div class="sl-block" data-block-type="image" data-block-id="eb1578663f2b0062b0662cb74257547d" style="min-width: 30px; min-height: 30px; width: 359px; height: 151.595px; left: 314px; top: 464px;"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="476" data-natural-height="201" style="" src="./index_files/pasted-from-clipboard(1).png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="ecdfed600cbcab1de8320c703547229b" style="min-width: 30px; min-height: 30px; width: 359px; height: 156.614px; left: -39px; top: 391px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="1600" data-natural-height="698" style="" src="./index_files/pasted-from-clipboard(2).png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="17a0fb599512e6f5b826a3b309e125d6" style="min-width: 30px; min-height: 30px; width: 359px; height: 121.836px; left: 4px; top: 7px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1600" data-natural-height="543" src="./index_files/pasted-from-clipboard(3).png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="6c8a473550b435e993c2c8742c0ef81d" style="min-width: 30px; min-height: 30px; width: 359px; height: 132.963px; left: 560px; top: 7px;"><div class="sl-block-content" style="z-index: 16;"><img data-natural-width="540" data-natural-height="200" style="" src="./index_files/pasted-from-clipboard(4).png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="19072666735f17ad4fbf46303ee68b49" style="min-width: 30px; min-height: 30px; width: 155.1px; height: 55px; left: 783px; top: 493px;"><div class="sl-block-content" style="z-index: 17;"><img data-natural-width="141" data-natural-height="50" style="" src="./index_files/pasted-from-clipboard(5).png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="d9fe6e33a8cecaf864399ca1ee113eb5" style="min-width: 30px; min-height: 30px; width: 165.938px; height: 85px; left: 783px; top: 597px;"><div class="sl-block-content" style="z-index: 18;"><img style="" data-natural-width="531" data-natural-height="272" src="./index_files/pasted-from-clipboard(6).png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="e1f2f0d7c8e3cb3e78c107619838e3eb" style="min-width: 30px; min-height: 30px; width: 359px; height: 63.8512px; left: 593px; top: 122px;"><div class="sl-block-content" style="z-index: 19;"><img style="" data-natural-width="551" data-natural-height="98" src="./index_files/pasted-from-clipboard(7).png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="35b57f0e31831d49ab9ba3727ae596d4" style="min-width: 30px; min-height: 30px; width: 274.5px; height: 91.5px; left: 4px; top: 140px;"><div class="sl-block-content" style="z-index: 20;"><img style="" data-natural-width="600" data-natural-height="200" src="./index_files/pasted-from-clipboard(8).png"></div></div>
+
+<div class="sl-block" data-block-type="text" data-block-id="638cc8a4678b88a119e6d2f16adeac07" style="height: auto; min-width: 30px; min-height: 30px; width: 783px; left: 106px; top: 343px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;">
+<p><span style="color:#FFFFFF"><span style="font-size:0.9em"><span style="font-size:0.7em">VICTORIA KOH | ROHAN KOPPARAPU | JAZIB MAHBOOB | DANYAAL MASOOD</span>&nbsp;</span><span style="font-size:0.7em">&nbsp; </span>&nbsp;</span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="677a181354cb0720676b90d6d31b1bc8" style="min-width: 30px; min-height: 30px; width: 275.312px; height: 92px; left: 486px; top: 590px;"><div class="sl-block-content" style="z-index: 22;"><img data-natural-width="1200" data-natural-height="401" style="" src="./index_files/pasted-from-clipboard(9).png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="dd155b775b31c0de3c5549cc9251574d" style="min-width: 30px; min-height: 30px; width: 198.839px; height: 67px; left: 739px; top: 420px;"><div class="sl-block-content" style="z-index: 24;"><img data-natural-width="184" data-natural-height="62" style="" src="./index_files/pasted-from-clipboard(10).png"></div></div></section><section data-id="5b588e053ecc67fc0d433fbc65cd1994" hidden="" aria-hidden="true" class="future" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 29px; height: auto;" data-block-id="8715547c77cf1baf77beb612319b91bc"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>What's a physics engine?&nbsp;</h2>
+
+<p>&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 287px; height: auto;" data-block-id="defa640cbd5a8648d0543b844c3f6124"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 12; text-align: left; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p>Computer software that provides an approximate simulation of certain physical systems.</p>
+
+<p>&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="6289b95737d1e54ba3ee75257891956e" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 560px; top: 0px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/CheapAmusedAffenpinscher?speed=0.5" src="./index_files/saved_resource.html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="4fbd08517ea42d2c2378b3efc8f4229c" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 560px; top: 341px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ThisSizzlingDevilfish" src="./index_files/saved_resource(1).html"></iframe></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="7d040f4c3e3d4ca2c9817194dca154bf" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 23px; top: 464px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; transition-duration: 0.6s; transition-delay: 2.3s;" data-animation-type="slide-right" dir="ui">
+<p style="color:rgb(255, 255, 255); text-align:left"><span style="font-size:0.7em">Example physic simulations:</span></p>
+<p style="text-align:left"><span style="font-size:0.7em"><strong>+</strong> Rigid-body dynamics</span></p>
+<p style="text-align:left"><span style="font-size:0.7em"><strong>+</strong> Soft-body dynamics</span></p>
+<p style="text-align:left"><span style="font-size:0.7em"><strong>+</strong> Fluid dynamics</span></p>
+</div></div></section><section class="stack future" data-id="eab76ebaf50fdb93f31e800db5c2b52b" hidden="" aria-hidden="true" style="display: block;"><section data-id="8cff9b7d864c8b3edd844b9dc1239f47" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="01715717bb296b64f48c9ee2e3e89d7c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Why have a physics engine?</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="4f687eba7656f6d2e2f224c5997574c3" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 187px; top: 510px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<p><em>BASIC LEVEL : Drives object movement &amp; interaction</em></p>
+</div></div></section><section data-id="a204bbe8bd7bf8567170eb10a1117337" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 900px; left: 30px; top: 58px; height: auto;" data-block-id="2af4753a09fa4d7832a3d0a22c3a9d01"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left;" data-placeholder-text="Text">
+<h1>1.</h1>
+
+<h1>REA<span style="color:#000080">LISM</span><br>
+<span style="color:#000080">IMME</span>RSION<br>
+&nbsp;</h1>
+</div></div></section><section data-id="18abe13389555feb889d3cb1ad9c6671" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 258px; height: auto;" data-block-id="45c29fed45224908bbd2d177e69c6710"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>EMER<span style="color:#000080">GENT GAME</span>PLAY</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="3b224ca02ca5f36c33cd735bde2d1ad9" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: -201px; top: 57px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 200%;">
+<h1>2.</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="21beffdfa8225dc68ac617dbd243ca39" style="height: auto; min-width: 30px; min-height: 30px; width: 717px; left: 145px; top: 367px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<p><em>CONCEPT : </em></p>
+
+<p>&nbsp;</p>
+
+<p><em>Placing tools around the player to encourage them to <span style="color:#000080">explore and exploit</span> their surroundings <span style="color:#000080">strategically</span>, enhancing game play</em></p>
+</div></div></section></section><section class="stack future" data-id="520ee3aa27a7820d5ce143c550137a1a" hidden="" aria-hidden="true" style="display: none;"><section data-id="1c41e8ece926d3a3afb55352c78e009a" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 833px; left: 79px; top: 50px; height: auto;" data-block-id="9be79b40fa5d95f5fa3c4a9ba8568dc9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>
+<span style="font-size:1.2em"><span style="color:#000080">But</span></span> it can ALL go</h2>
+
+<h2><span style="color:#000080">VERY wrong</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="3fe9b214699b40136564fad1dcec37f2" style="min-width: 30px; min-height: 30px; width: 728px; height: 351px; left: 132px; top: 228px;"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/SardonicLongKarakul" src="./index_files/saved_resource(2).html"></iframe></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="ed9cb39f280e93805a10268fd5dc0f83" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 448px; top: 601px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><em>&nbsp;- Saints Row 3</em></p>
+</div></div></section><section data-id="ac414edbe44d1a3e919dd5ed26182042" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 140px; height: auto;" data-block-id="6781a257cdefb28e5f2cad6816bb5c28"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>
+<span style="color:#000080">unreal</span>istic</h1>
+
+<h1><span style="color:#000080">&amp;</span></h1>
+
+<h1>GAME-<span style="color:#000080">BREAK</span>ING results</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="5851b55a10ab23ed3971b93156ed1be3" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 166px; top: 32px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<p>...Leading to...</p>
+</div></div></section></section><section class="stack future" data-id="f50e20591a02d09d0baaee1be4088c30" hidden="" aria-hidden="true" style="display: none;"><section data-id="45cf31d6caf985ea2450d2e6253ed996" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="1704885ed56cc6d8ffebe400ff371413"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>common <span style="color:#000080">mistakes</span>:</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="45e56092449af79e1770313ec76a413c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<ul>
+	<li>
+	<pre>Incorrect Scaling in games</pre>
+	</li>
+	<li>
+	<pre>Objects without Bounciness</pre>
+	</li>
+	<li>
+	<pre>Objects rolling forever...</pre>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="b11f5eff718b56b928b89d38982ca1d1" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 92px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h1>SOME</h1>
+</div></div></section><section data-id="e1e65853ecc2fbc233cbbadafd274010" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 51px; height: auto;" data-block-id="97b89c8c0184481d92de65f6a85ded43"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>All of which...</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 147px; height: auto;" data-block-id="d6b6b695a477a06c921c89a7844bfa46"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h2><span style="color:#000080">Destroys IMMERSION</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="6085f9bda50ad59ce8e00a2db055209f" style="min-width: 30px; min-height: 30px; width: 535px; height: 402.5px; left: 213px; top: 240px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ScratchyZestyDegus" src="./index_files/saved_resource(3).html"></iframe></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="15d75ac09794557809e8f5559c46ee7b" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 400px; top: 624px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><em>- GTA 4</em></p>
+</div></div></section></section><section class="stack future" data-id="4d8b5f9901e7a9fa4d8f9a802364636b" hidden="" aria-hidden="true" style="display: none;"><section data-id="43554c246b783ec86b441b29bd74a18d" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 87px; height: auto;" data-block-id="ef22fdceaf65619859fe08d22893ecea"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>How do they work?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 235px; height: auto;" data-block-id="cadabb7e300b1ba78b8d9d5bd1d09c60"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p>&nbsp;</p>
+
+<h3>TWO CLASSES :</h3>
+
+<p>&nbsp;</p>
+
+<p><strong>1. High-precision engines</strong></p>
+
+<p><em>&nbsp; &nbsp; e.g. animated movies</em></p>
+
+<p><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;scientific simulations</em></p>
+
+<p><strong>2. Real-time engines</strong></p>
+
+<p><em>&nbsp; &nbsp; e.g. video games</em></p>
+
+<p>&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 454px; height: 641px; left: 479px; top: 29px;" data-block-id="37c7ce5b8c4ce8ee11c436b4f3c82765"><div class="sl-block-content"></div></div></section><section data-id="f93192916e403b2394df43a0dd53feef" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 103px; height: auto;" data-block-id="40b537189740a64f9a1a732ac5c8b270"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2><span style="color:#000080">hi-PRECISION</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 29px; top: 210px; height: auto;" data-block-id="8993427d0347a5b2f08b5f45dec615e5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<ul>
+	<li>Significant amounts of <span style="color:#000080">processing power</span> req. to calculate very<span style="color:#000080"> precise </span>physics.</li>
+	<li>Time taken to calculate the next frame of the simulation can last from: <span style="color:#000080">minutes to days</span>.</li>
+</ul>
+
+<p>&nbsp; &nbsp;&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 528px; top: 103px; height: auto;" data-block-id="30e9e1fe663eb2f839c4bd6bf86d20ed"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2><span style="color:#000080">REAL-TIME</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 503px; top: 210px; height: auto;" data-block-id="142cdccb1cef6c126763a45e3bac15eb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<ul>
+	<li>
+<span style="color:#000080">Speed</span> of processors and game-play <span style="color:#000080">over </span>simulation <span style="color:#000080">accuracy</span>.</li>
+	<li>Designed to use "<span style="color:#000080">approximations</span>" - simplifying calculations &amp; decreasing accuracy to make computations '<span style="color:#000080">on time</span>'.</li>
+</ul>
+</div></div></section></section><section class="stack future" data-id="72083e833b7c41d272147a2742819ad9" hidden="" aria-hidden="true" style="display: none;"><section data-id="47799e6fe3853faffcfab79c967e1f13" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 72px; top: 199px; height: auto;" data-block-id="23afa43c958a5f3e3b2f8d138b9e521d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>
+<span style="color:#000080">What</span> was possible back then?</h1>
+</div></div></section><section data-id="0e7ccabc88840c3e39e84319447a1284" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 56px; height: auto;" data-block-id="e6b17badf6f0afb0ae8a120cd9572c55"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;"><h1>ATARI'S <span style="color:#000080;">PONG</span>
+</h1></div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 153px; height: auto;" data-block-id="3b16f746423248507745d6a14d5a6895"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<h2>- 19<span style="color:#000080">72</span> -</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="4821378eceb4b74d5b593f7b0b186805" style="min-width: 30px; min-height: 30px; width: 485px; height: 388px; left: 240px; top: 250px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/MammothUnfoldedKillerwhale" src="./index_files/saved_resource(4).html"></iframe></div></div></section><section data-id="9615e0e487d7f11c99edb5dba9d9ff75" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 56px; height: auto;" data-block-id="d4d66598507fe4e083b3c815388756c3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>SUPER <span style="color:#000080">MARIO BROS</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 153px; height: auto;" data-block-id="d0a4ff80e8170cde6674a615cb34eb58"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h2>- 19<span style="color:#000080">85</span> -</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="b4a1c20f822c24431ffad61da2e8002f" style="min-width: 30px; min-height: 30px; width: 580px; height: 437px; left: 190px; top: 227px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/CarefulBlondFrenchbulldog" src="./index_files/saved_resource(5).html"></iframe></div></div></section><section data-id="252a646c23426491d68611467a7178d2" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 56px; height: auto;" data-block-id="daa42db4e8370ba10644bd6fed3562dd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>SUPER <span style="color:#000080">MARIO 64</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 153px; height: auto;" data-block-id="bdab759535aa254fdce6e94c89fe986b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h2>- 19<font color="#000080">96</font>&nbsp;-</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 580px; height: 437px; left: 190px; top: 227px;" data-block-id="af0384afb60459b9cc7e13c2f01ca8ec"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ElasticConsciousBoutu" src="./index_files/saved_resource(6).html"></iframe></div></div></section><section data-id="e3b7c2757d5c1920f2c4813c88813efb" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 56px; height: auto;" data-block-id="8942e7b3633a8dc6f1d5c979a45b95d1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>half-<span style="color:#000080">life 2</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 153px; height: auto;" data-block-id="5d5048925fbf1698c14777bb87fcf40b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h2>- 20<span style="color:#000080">04</span> -</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 580px; height: 437px; left: 190px; top: 227px;" data-block-id="31575fd6f763750f223dc8776800763a"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/WetGoodLarva" src="./index_files/saved_resource(7).html"></iframe></div></div></section><section data-id="5f43dfd443f48705fa03dc3688f50a83" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="b70fca31225a3e5a86f636d35433fc21"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Let's get <span style="color:#000080">more </span>modern</h1>
+</div></div></section><section data-id="0f8d40d4c1c3c68d71e7fff6540e116a" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 56px; height: auto;" data-block-id="2dbce213bf58dd237b6a7490d370b079"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>
+<span style="color:#000080">BIO</span>SHOCK</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 153px; height: auto;" data-block-id="26777c853a42b6007956968446a485fe"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h2>- 20<span style="color:#000080">07</span>&nbsp;-</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 580px; height: 437px; left: 190px; top: 227px;" data-block-id="e09ef0f59e42b90bf0550c55295439d3"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/SlushyTameGoat" src="./index_files/saved_resource(8).html"></iframe></div></div></section><section data-id="be98ed27bf7c6a98751d518ce2e910bd" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 56px; height: auto;" data-block-id="3115918048d25cf7d4c6b60282fc72a4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>Battlefield<span style="color:#000080">&nbsp;4</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 153px; height: auto;" data-block-id="3f1d02cb16749077e31553ea59cb4c01"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h2>- 20<font color="#000080">13</font>&nbsp;-</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 580px; height: 437px; left: 190px; top: 227px;" data-block-id="8b346c40eb7778ded9221e73a88e0331"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/FrailDaringAcornbarnacle" src="./index_files/saved_resource(9).html"></iframe></div></div></section><section data-id="b8d06d9a5cdfb88f47ccb4fc41c87407" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="9a54ee12112af6644d0525fec5b64295"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Most <span style="color:#000080">modern games</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 384px; height: auto;" data-block-id="a014bbb167c9ec77d1867102a607e5f3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-animation-type="slide-down" style="transition-duration: 0.6s; transition-delay: 0.6s;">
+<h2>utilise general purpose physics engines</h2>
+</div></div></section><section data-id="e276677877beb0cb340d2f427f9c15f0" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="f1c9220485bd15258682aa9f42afed31"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>PHYSICs is used to <span style="color:#000080">simulate</span> more <span style="color:#000080">complex situations </span>Too</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 412px; height: auto;" data-block-id="a3871a6a77676a6b7376774b4a4281f0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" data-animation-type="slide-down" style="transition-duration: 0.6s; transition-delay: 0.6s;">
+<ul>
+	<li>Destructible environments</li>
+	<li>Cloth</li>
+	<li>Hair / fur</li>
+	<li>Fluids etc</li>
+</ul>
+</div></div></section></section><section class="stack future" data-id="b5d7d1d09fa09898f9b415040333a6db" hidden="" aria-hidden="true" style="display: none;"><section data-id="f630d40679f65523ed76a107a2d7635d" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 74px; top: 176px; height: auto;" data-block-id="92a5f48ac12b54c495be92a28d769213"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Let's discuss REALISTIC</h1>
+
+<h1>
+<span style="color:#000080">car</span> physics</h1>
+</div></div></section><section data-id="61684934eb122896d80ae3e36c6bc027" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="iframe" data-block-id="652abe0ea350f4361daa940f77ec92c2" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 34px; top: 27px;"><div class="sl-block-content" style="z-index: 11;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ScholarlyClassicCollie" src="./index_files/saved_resource(10).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 34px; top: 374px;" data-block-id="218de818e135368fe6e95c90fdf7d9c8"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/RightVigilantAmericanquarterhorse" src="./index_files/saved_resource(11).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 540px; top: 27px;" data-block-id="638b08a68e5b181c1fa1516b377c477b"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/SharpPersonalKestrel" src="./index_files/saved_resource(12).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 540px; top: 374px;" data-block-id="c5e853d7215a5eae4242e1881de72057"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ChubbyComfortableHarvestmouse" src="./index_files/saved_resource(13).html"></iframe></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="bace7042f700d39ed3469165b9d7c4d9" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 331px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p>BeamNG's realistic car physics</p>
+</div></div></section></section><section class="stack future" data-id="0abf02603f2ec24575da3847d4f1b40a" hidden="" aria-hidden="true" style="display: none;"><section data-id="cfe9c3a2d89519c1ac42eae4f65cc47e" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 410px; left: 50px; top: 233px; height: auto;" data-block-id="9b0f27c5189706abef7ca55129ccbacf"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h3>Rigid-body</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 50px; top: 327px; height: auto;" data-block-id="9a8b20dfad63540008d962c2b223162b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<ul>
+	<li><span style="font-size:0.7em">Most common </span></li>
+	<li><span style="font-size:0.7em">Less CPU intensive</span></li>
+	<li><span style="font-size:0.7em">Easily configurable</span></li>
+	<li><span style="font-size:0.7em">Objects simulated as a whole with different categories of objects</span></li>
+	<li><span style="font-size:21px">Each category needs its' behaviour to be programmed</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 500px; top: 233px; height: auto;" data-block-id="6d3c504617d3a67a9c415c6bc9933b98"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 13;">
+<h3>SOFT-BODY</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="377843fc6ac840045947f865d7943476" style="height: auto; min-width: 30px; min-height: 30px; width: 738px; left: 105px; top: 36px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<h2>TWO <span style="color:#000080">BASE TYPES</span> OF PHYSICS SIMULATIONS</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 509px; top: 332px; height: auto;" data-block-id="e2102f5ad0041bcd8bed69e8359322b5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 16; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<ul>
+	<li style="color:rgb(255, 255, 255)"><span style="font-size:0.7em">Very CPU intensive</span></li>
+	<li style="color:rgb(255, 255, 255)"><span style="font-size:0.7em">Easily modified</span></li>
+	<li style="color:rgb(255, 255, 255)"><span style="font-size:0.7em">Objects simulated as a sum of their parts, thus 'harder to work with'.</span></li>
+	<li style="color:rgb(255, 255, 255)"><span style="font-size:0.7em">Behaviour of objects emerges from the behaviour of it's 'parts'</span></li>
+</ul>
+</div></div></section><section data-id="cedf01971d4d8cf15339d9c6292cad4c" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="11a83df252962c6dee67088e3984980a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Modern examples</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="79c73c85588b8f50016c1b987a2cda53"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-animation-type="slide-down" style="transition-duration: 0.6s; transition-delay: 0.6s;">
+<h2>
+<span style="color:#000080">RIGID</span> VS. <span style="color:#000080">SOFT</span>
+</h2>
+</div></div></section><section data-id="81740a1a998a47b23e6c88a62f63cbfc" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 93px; top: 45px; height: auto;" data-block-id="bf1bc50d3724034ac2581538061785bd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>bacK TO <span style="color:#000080">B<span style="font-size:0.7em">EAM</span>NG</span> VEHICLES</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="bc880c5fc400255470f27f6fac39ff7e" style="height: auto; min-width: 30px; min-height: 30px; width: 856px; left: 80px; top: 183px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p style="text-align:left">An example of<span style="color:#000080"> soft-body physics</span>.</p>
+
+<p style="text-align:left">&nbsp;</p>
+
+<p style="text-align:left">BeamNG assembles its' vehicles from approx. 50 separate parts.</p>
+
+<p style="text-align:left">These parts are simple entities - mass points connected to each other and simulated.</p>
+
+<p style="text-align:left">&nbsp;</p>
+
+<p style="text-align:left">Note : there is not a single line of code determining how the vehicle should then behave.</p>
+</div></div></section><section data-id="c4bc4bf838f319bd4bfd545c494d2c67" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 887px; left: 40px; top: 45px; height: auto;" data-block-id="da0f73fcd4219bc40d3cd044d471f811"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>
+<span style="color:#000080">JUST CAUSE 3 </span>&amp; wacky physics</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 856px; left: 80px; top: 214px;" data-block-id="3d0261acd9759523e7d9f4f0bc7b5bb7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left">An example of rigid-body physics.</p>
+
+<p style="text-align:left">&nbsp;</p>
+
+<p style="text-align:left">&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="05c125b6ebeee9f121f260c589b46a1f" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 80px; top: 235px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/IncompatibleUnitedAmmonite" src="./index_files/saved_resource(14).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="863af3bc458dbabcfe9116e1f3187a81" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 520px; top: 235px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/HeavenlyFittingAmurstarfish" src="./index_files/saved_resource(15).html"></iframe></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="1bdbbf990dd0be9950cbc9570b080214" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 160px; top: 560px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p>Relatively normal... <span style="color:#000080">(for now)</span></p>
+</div></div></section><section data-id="eae9c18dce16dc4d448200a3b748d314" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 887px; left: 40px; top: 45px; height: auto;" data-block-id="09df544ba740bdefc6ff121c843b617e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>
+<span style="color:#000080">JUST CAUSE 3 </span>&amp; wacky physics</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 856px; left: 80px; top: 214px;" data-block-id="3ba6ed10fccb64b10b15a83e0f135f2b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left">An example of rigid-body physics.</p>
+
+<p style="text-align:left">&nbsp;</p>
+
+<p style="text-align:left">&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 560px;" data-block-id="422eda6ed9ffaf58105619e0b0731450"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p><s>Relatively normal... <span style="color:#000080">(for now)</span></s></p>
+
+<p><span style="color:#000080">Okay... normal enough...<s>c-cars can do that in real life too</s></span></p>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 80px; top: 235px;" data-block-id="bd8e2729372549b0df251d322b6f1aed"><div class="sl-block-content" style="z-index: 15;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/InsecureWellinformedBichonfrise" src="./index_files/saved_resource(16).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 520px; top: 235px;" data-block-id="b02338c404f8cb91623c0ce9df5301c6"><div class="sl-block-content" style="z-index: 16;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/HollowMiniatureDarklingbeetle" src="./index_files/saved_resource(17).html"></iframe></div></div></section><section data-id="cc33cb426c31ddea076c606a3befd8ee" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 887px; left: 40px; top: 45px; height: auto;" data-block-id="c8e148e69ea94ba2e7bc9c7d512edb51"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Did someone say goats?</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="5016b37e8536ef4bb4c185f249cf65b4" style="min-width: 30px; min-height: 30px; width: 608px; height: 417px; left: 176px; top: 125px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/GentleWeirdCat" src="./index_files/saved_resource(18).html"></iframe></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="1fa2929eb0350cd9e7b6fd27d722352d" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 170px; top: 541px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<h3><s>GOATS ORBITING CARS <span style="color:#000080">(not really)</span></s></h3>
+</div></div></section><section data-id="517eaa2e836ab148eb6d5d92dfe4ecc3" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 887px; left: 37px; top: 45px; height: auto;" data-block-id="c1a5ad9c15e8fdfeb9a8229f7c3bc1ca"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>AVALANCHE STUDIOS : <span style="color:#000080">JC3</span>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 414px; height: 386px; left: 510px; top: 145px;" data-block-id="fda3925bfe5b7928a1f2f349f91d1478"><div class="sl-block-content" style="z-index: 11;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/RecklessEarnestEmperorshrimp" src="./index_files/saved_resource(19).html"></iframe></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="4996fae53f089e2a44dc7c6d1bcc5fc8" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 55px; top: 166px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h3 style="text-align: left;">Goals :&nbsp;</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="dda9fe9041b8814c61d8a73f24d82f0a" style="height: auto; min-width: 30px; min-height: 30px; width: 404px; left: 38px; top: 261px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s; line-height: 1.612;" dir="ui" data-animation-type="slide-right" data-has-line-height="">
+<ul>
+	<li><span style="font-size:0.9em"><span style="color:#000080">Physics driven</span> destruction</span></li>
+	<li><span style="font-size:0.9em">Sweet spot: <span style="color:#000080">cool vs realistic</span></span></li>
+	<li><span style="font-size:0.9em">Primarily made use of <span style="color:#000080">Havok</span>&nbsp;for <span style="color:#000080">rigid-body</span> physics</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f1b80257010535bfd7ff98b3e1edc5dc" style="height: auto; min-width: 30px; min-height: 30px; width: 859px; left: 37px; top: 550px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<h3 style="text-align:right">"Not designing is part of designing"&nbsp;</h3>
+
+<h3 style="text-align:right"><span style="font-size:0.7em">- Anders Bodbacka</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 197.506px; height: 66px; left: 726px; top: 425px;" data-block-id="f319ea5b34d24fcd26f46daf295065d1"><div class="sl-block-content" style="z-index: 16;"><img data-natural-width="1200" data-natural-height="401" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121570/pasted-from-clipboard.png"></div></div></section><section data-id="b925270850dbcf90c8ce03f6f8b56485" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 89px; top: 210px; height: auto;" data-block-id="21fb0b9b7265098117972587881f4852"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>A <span style="color:#000080">cross-over</span>: SOFT <span style="color:#000080">&amp;</span> RIGID BODIES</h1>
+</div></div></section><section data-id="2d470b2540d70c6d97306e8499511ee9" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 43px; height: auto;" data-block-id="e646bcfcba4981b5090c1980fd7bfac0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>UNCHARTED <span style="color:#000080">4</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 126px; height: auto;" data-block-id="8313836c9474ad6ca565169739c5680a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h2>- 20<span style="color:#000080">16</span> -</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="5a82a4c54456894d60b1798e1e247fc6" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 80px; top: 218px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ComplicatedBlandAmericanblackvulture" src="./index_files/saved_resource(20).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="fbbe85fda4550391cc144ea5bf5f7591" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 520px; top: 218px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/IcyValidKawala" src="./index_files/saved_resource(21).html"></iframe></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="2fd450dd94a26580433159374b267a70" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 529px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p><span style="color:#000080">Havok 3.1</span> simulates both soft-body and rigid-body physics for this game</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="3bfcbdfc774bccf4128ebc1bb8d0e433" style="height: auto; min-width: 30px; min-height: 30px; width: 642px; left: 174px; top: 611px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p><span style="font-size:0.5em">Using custom<span style="color:#000080"> Ambient Occlusion </span>solutions + a full physically based rendering pipeline for water &amp; sand</span></p>
+</div></div></section></section><section class="stack future" data-id="59635b1df4ae4c655a7dd6dd8b87bd6c" hidden="" aria-hidden="true" style="display: none;"><section data-id="d7a60ddda6bde7cb1369ec5440a905ba" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 226px; height: auto;" data-block-id="36e3e280c7a418189d39a6b95c02e780"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Let's talk about <span style="color:#000080">tools</span>
+</h1>
+</div></div></section><section data-id="59e55a21e9822ae1313f54703286591e" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 135.074px; left: 569px; top: 527px;" data-block-id="6507518ae7e3a60728d219e7a45bc178"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1600" data-natural-height="602" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121431/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 151.595px; left: 291px; top: 135px;" data-block-id="f948b2df1376ecc5d41a3e4f78e19bcb"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="476" data-natural-height="201" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121440/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 296.774px; height: 100px; left: 39px; top: 560px;" data-block-id="8dbcb50c0c6739bf74a820e58d4707f6"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="184" data-natural-height="62" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121645/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="e87ed1d0a319c64a8ea832591f1357f8" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 194px; top: 286px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 70%;">
+<h3>- ROCKSTAR ADVANCED GAME ENGINE -</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="5e1235a1d3a8fd6a1dfe1d1431d32a2b" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 187px; top: 366px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<p><span style="font-size:0.9em">Uses both <span style="color:#000080">Euphoria</span> &amp; <span style="color:#000080">Bullet</span> physics plugins to simulate soft-body &amp; rigid-body physics</span></p>
+</div></div></section><section data-id="8c98e2e2ef00875505121435cbb4d937" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 66px; height: auto;" data-block-id="630920c814df10410898edf70aec98d0"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>EU<span style="color:#000080">PHORIA</span>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 446px; left: 49px; top: 180px; height: auto;" data-block-id="39a657aa3614d4c60a0c635fbb4b38a2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="slide-right">
+<p><span style="font-size:0.9em">Based on: <span style="color:#000080">Dynamic Motion Synthesis </span>- A technology for animation 3D characters on-the-fly</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:0.9em">Fully simulates the character, including muscles and the motor nervous system</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:0.9em">Limp ragdolls can be avoided, as well as the hard-coding of character simulations</span></p>
+
+<p>&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="fc68dab363e89383d9a06059b028824b" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 533px; top: 45px;"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/BountifulMadArgentineruddyduck" src="./index_files/saved_resource(22).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="15b98b8a9ee98631251c7cd7742bedb5" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 533px; top: 356px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/PreciousWellwornCentipede" src="./index_files/saved_resource(23).html"></iframe></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 154.323px; height: 52px; left: 326px; top: 647px;" data-block-id="11fb1a559e91c9ff62567ed532539f27"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="184" data-natural-height="62" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121645/pasted-from-clipboard.png"></div></div></section><section data-id="1c5a961fc36403a3421330dda18feec5" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 66px; height: auto;" data-block-id="a08c0ebac4067ef2d0b221d19cd01ef3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>BUL<span style="color:#000080">LET</span>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 380px; left: 49px; top: 180px; height: auto;" data-block-id="b6763dd2a51d2c21be996d1d74c97842"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="slide-right">
+<p><span style="font-size:0.9em">Free <span style="color:#000080">Open-Source </span>Software</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:0.9em">Used in both video games and movie visual effects</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:0.9em">Allows for both rigid and soft-body (e.g. cloth, ropes, deformable objects) simulations with discrete and continuous <span style="color:#000080">collision detection </span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 483px; height: 360px; left: 448px; top: 29px;" data-block-id="daa5ca60a5fa6dfa9336194ec222c492"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/PoshFluffyAnnelid" src="./index_files/saved_resource(24).html"></iframe></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 135.074px; left: 521px; top: 420px;" data-block-id="d141e56958d84d2db1523db4d7b1fa91"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1600" data-natural-height="602" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121431/pasted-from-clipboard.png"></div></div></section></section><section class="stack future" data-id="8c7a80c97c8061fba4b78232a28bfe17" hidden="" aria-hidden="true" style="display: none;"><section data-id="0a336eebcdaa0dd1d2a3809bba8f4334" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 720px; left: 130px; top: 175px; height: auto;" data-block-id="2bf9b8220286c2eedcc6d3d7542eeb57"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>What's the <span style="color:#000080">state of the art</span> look like?</h1>
+</div></div></section><section data-id="c8e9d5f4cc9ff62556497d69b27955bd" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="1d77de0f256c04bb0e15c3e631ce3459"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>NVIDIA</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="1bbd06077abcea6e1b48b203e8d19d7f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h2>GAME<span style="color:#000080">WORKS</span>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 121.836px; left: 301px; top: 60px;" data-block-id="61e4e5080d7751f0ec88f4966b4e3fbf"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1600" data-natural-height="543" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121454/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="370e2887bf5e7363802a7518fb61a7af" style="height: auto; min-width: 30px; min-height: 30px; width: 633px; left: 167px; top: 452px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<p><span style="font-size:0.9em">Providing <span style="color:#000080">development tools </span>to make the creation &nbsp;of rich and quality gaming experiences better</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="510f82a2bec3e74369a6f0945caaf7d8" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 167px; top: 505px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; transition-duration: 0.6s; transition-delay: 1s;" data-animation-type="slide-down">
+<h2><span><span style="font-size:14.6667px">PhysX | GI Works | HairWorks | FlameWorks etc.</span></span></h2>
+</div></div></section><section data-id="349ca94c3fa25c474275a44de2d83c73" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 762px; left: 80px; top: 52px; height: auto;" data-block-id="d992d4ea0e9f9bd726b633efc706acc9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>
+<span style="color:#000080">HAIR/ Fur</span>&nbsp;SIMULATIONS</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="c1a4dcec40efc326c5e002c9a5e4cbce" style="min-width: 30px; min-height: 30px; width: 435px; height: 408px; left: 492px; top: 83px;"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/IndelibleWeakCusimanse" src="./index_files/saved_resource(25).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="d87734d5fb895a47b4c9947b8ceb29bc" style="min-width: 30px; min-height: 30px; width: 432px; height: 325px; left: 48px; top: 124px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/EnormousOrneryIguanodon" src="./index_files/saved_resource(26).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="0d3ffb009092e16e139743c1866d0d10" style="min-width: 30px; min-height: 30px; width: 434px; height: 418px; left: 48px; top: 331px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/SpectacularDevotedBlackrussianterrier" src="./index_files/saved_resource(27).html"></iframe></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="e3ef97c2e0761993e0d10ebfb365a49b" style="min-width: 30px; min-height: 30px; width: 432px; height: 90.1353px; left: 504px; top: 490px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="532" data-natural-height="111" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3125181/Untitled1.png"></div></div></section><section data-id="49a0ece1b45024b2d6f8b489321de587" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 786px; left: 80px; top: 52px; height: auto;" data-block-id="2b61b932eaf9c488d91fdd74ce434190"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>
+<span style="color:#000080">RIGID+FLUID</span>&nbsp;SIMULATIONS</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 435px; height: 408px; left: 492px; top: 83px;" data-block-id="aac565f317771d96bb40cadb59c896b6"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/GiganticPoshKentrosaurus" src="./index_files/saved_resource(28).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 432px; height: 325px; left: 48px; top: 126px;" data-block-id="def1c1d66d4bf2723698fd0c31977aec"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/JoyousCelebratedHydra" src="./index_files/saved_resource(29).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 434px; height: 418px; left: 48px; top: 331px;" data-block-id="da8a4b5a1e518e84a79a494903ab7cce"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ImprobableAdmirableAndalusianhorse" src="./index_files/saved_resource(30).html"></iframe></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 156.614px; left: 567px; top: 490px;" data-block-id="47a8e056feefb2022ceed7b282a32bd6"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="1600" data-natural-height="698" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121444/pasted-from-clipboard.png"></div></div>
+
+</section><section data-id="b86b2b29c5eac5aa7eaf7d40b19fa53f" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 786px; left: 48px; top: 41px; height: auto;" data-block-id="09bdf246c3eed131610e1d8fa46ec24a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;" dir="ui"><h3>
+<span style="color:#000080">TUrbulence physx</span> particles and flex unified physx</h3></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 435px; height: 408px; left: 492px; top: 83px;" data-block-id="f8ad8d4fd2cd4ed9013d4f2933ea52da"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/AccuratePerfectCur" src="./index_files/saved_resource(31).html"></iframe></div></div>
+
+
+
+
+<div class="sl-block" data-block-type="image" data-block-id="822ddea136e914ad218a613c0154fa43" style="min-width: 30px; min-height: 30px; width: 359px; height: 137.212px; left: 567px; top: 493px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1596" data-natural-height="610" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3125268/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="2f133241e050b45cef0101aa4ef35937" style="height: auto; min-width: 30px; min-height: 30px; width: 432px; left: 48px; top: 205px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p style="text-align:left"><span style="font-size:0.9em"><span style="color:#000080">TPP</span> allows for interactive, massive-particle simulations based on <span style="color:#000080">Eulerian fluid </span>simulations</span></p>
+
+<p style="text-align:left">&nbsp;</p>
+
+<p style="text-align:left"><span style="font-size:0.9em"><span style="color:#000080">FuP</span> is a <span style="color:#000080">unified solver</span> for effects and phase transitions. It is usable for rigid and deformable bodies, particles, fluids, cloth etc.</span></p>
+
+<p style="text-align:left">&nbsp;</p>
+
+<p style="text-align:left">&nbsp;</p>
+</div></div></section><section data-id="41b439733cb518ba5c3748cd59aacbec" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 86px; top: 22px; height: auto;" data-block-id="a8be14d9d716f9f98ffe8b11174d1d59"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>More phys<span style="color:#000080">x</span> : fle<span style="color:#000080">x</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 103px; height: auto;" data-block-id="cf5d75033367bc0a5c53a4f20d8b00f4"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-animation-type="slide-down" style="transition-duration: 0.6s; transition-delay: 0.6s; z-index: 12;">
+<h2>EXAMPLES</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="0ea39f7fdd54f50c3fdbb9551be4edd6" style="min-width: 30px; min-height: 30px; width: 451px; height: 338px; left: 21px; top: 140px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/SpecificAfraidCarp" src="./index_files/saved_resource(32).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="ee8c2f4176d547ea6f4ad1f888141b69" style="min-width: 30px; min-height: 30px; width: 425px; height: 312px; left: 260px; top: 409px;"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/NervousLavishGuanaco" src="./index_files/saved_resource(33).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="e7e76a62848cfbd10eb6efe43ec8a07a" style="min-width: 30px; min-height: 30px; width: 449px; height: 361px; left: 480px; top: 129px;"><div class="sl-block-content" style="z-index: 0;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/IllegalTintedAnt" src="./index_files/saved_resource(34).html"></iframe></div></div></section><section data-id="891c60fb2209a9a63c3ae3284291437f" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: -160px; top: 33px; height: auto;" data-block-id="acfeb832c3b5935b08123b40332092c0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>NVIDIA <span style="color:#000080">FLOW</span>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="3303bbcaeab3ecbb77308d7bb4e539c2" style="min-width: 30px; min-height: 30px; width: 403px; height: 348px; left: 519px; top: 55px;"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/DearestCompassionateDassierat" src="./index_files/saved_resource(35).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="156dfe8464978b0d5ebf2e23fc984cbf" style="min-width: 30px; min-height: 30px; width: 403px; height: 337px; left: 519px; top: 322px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/AromaticPoorCoqui" src="./index_files/saved_resource(36).html"></iframe></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="d30b1d97576ad06218c76ccc392d00b2" style="height: auto; min-width: 30px; min-height: 30px; width: 411px; left: 47px; top: 160px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p style="text-align:left"><span style="font-size:0.9em">SDK for combustible fluid, fire and smoke simulations in <span style="color:#000080">real-time</span></span></p>
+
+<p style="text-align:left">&nbsp;</p>
+
+<p style="text-align:left"><span style="font-size:0.9em">Models said simulations on a <span style="color:#000080">dynamic grid </span>to minimise RAM impact </span></p>
+</div></div></section><section data-id="3c8fb009f89d624bd4be324358c27391" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 786px; left: 48px; top: 36px; height: auto;" data-block-id="87fd28836deeb2c02852980235fd6682"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;" dir="ui">
+<h3>AMD <span style="color:#000080">TressFX </span>and<span style="color:#000080"> CaronteFX</span>
+</h3>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="14241b9122d692101e293c3fbadaee35" style="min-width: 30px; min-height: 30px; width: 400px; height: 272px; left: 41px; top: 490px;"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/DisloyalJealousAndeancockoftherock" src="./index_files/saved_resource(37).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="daa1569fd7eae514525a621a34cd00f0" style="min-width: 30px; min-height: 30px; width: 692px; height: 528px; left: 127px; top: 32px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/YellowishEntireCornsnake" src="./index_files/saved_resource(38).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="9fc72d56fde07d4095e214fcecbf09e2" style="min-width: 30px; min-height: 30px; width: 402px; height: 281px; left: 507px; top: 487px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/UnacceptableMadHapuku" src="./index_files/saved_resource(39).html"></iframe></div></div></section><section data-id="3dde728e23e3751f4d0561d95e09df63" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 786px; left: 48px; top: 36px; height: auto;" data-block-id="117e2097a405a8fc9dfb5499667d011a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;" dir="ui"><h3>NVIDIA <font color="#000080">VR FUNHOUSE</font>
+</h3></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 433px; height: 356px; left: 24px; top: 72px;" data-block-id="798175dd302b97b6b52f435497cd7cbc"><div class="sl-block-content" style="z-index: 11;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ZanyBadBlackmamba" src="./index_files/saved_resource(40).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 438px; height: 325px; left: 501px; top: 87px;" data-block-id="22409f8eddcc586632063c952f82bb2b"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/FoolhardyCompassionateFawn" src="./index_files/saved_resource(41).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 433px; height: 356px; left: 24px; top: 360px;" data-block-id="927eae94b1676e05ef2598df87e5e8e6"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ElementarySaneGermanspaniel" src="./index_files/saved_resource(42).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 438px; height: 325px; left: 501px; top: 376px;" data-block-id="cbbef7f7e29ff8675220fd3f1c83e9c9"><div class="sl-block-content" style="z-index: 15;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/BlandJoyfulDiplodocus" src="./index_files/saved_resource(43).html"></iframe></div></div></section><section data-id="199994ea53c5363847323af77d9059d9" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 786px; left: 48px; top: 36px; height: auto;" data-block-id="7aa703f2bfdb971c3f98f3f87a2d6176"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;" dir="ui">
+<h3>More NVIDIA <span style="color:#000080">VR FUNHOUSE</span>
+</h3>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 433px; height: 356px; left: 24px; top: 72px;" data-block-id="c805e9ab2422508c36a80e66c371c446"><div class="sl-block-content" style="z-index: 11;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/LastingAcrobaticCanadagoose" src="./index_files/saved_resource(44).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 438px; height: 325px; left: 501px; top: 87px;" data-block-id="5ab9d4aead41a2be38b621052959ea3f"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/RequiredMarriedGrouper" src="./index_files/saved_resource(45).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 433px; height: 356px; left: 264px; top: 350px;" data-block-id="dde51d3ba3ae0a02e97b2d6ca57371e3"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/TheseEvergreenAsiaticmouflon" src="./index_files/saved_resource(46).html"></iframe></div></div></section><section data-id="f57bc8e3a942c2b889bb6ed39752243b" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 304px; height: auto;" data-block-id="876ec043e8683313425a79d3bda84490"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>THE CUTTING EDGE</h1>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>(not necessarily new)</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="c8207059186a5991fbf6f05a47c21202" style="min-width: 30px; min-height: 30px; width: 542.021px; height: 171px; left: 362px; top: 70px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1214" data-natural-height="383" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/298089/images/3131899/ayy.PNG"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 231.24px; height: 82px; left: 56px; top: 99px;" data-block-id="696dbb560535bbdc8caac038325c6867"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="141" data-natural-height="50" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121479/pasted-from-clipboard.png"></div></div></section></section><section data-id="84f8a15779dfe3e08ed2b01d8086f000" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="65672e80583a5e4824eecbee77a080b3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Difficulties <span style="color:#000080">&amp;</span> challenges</h1>
+</div></div></section><section class="stack future" data-id="086e39a2a541db52ccde2abb3c8c255d" hidden="" aria-hidden="true" style="display: none;"><section data-id="586d816b7a55d36698415716880068c4" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="b654a91a3b1391497e01c7d21bb0d3ba"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>1.</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="093ad0f03de9b6a319ea02ee605ed32b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+<h2>Physics simulations are <span style="color:#000080">non-trivial</span>
+</h2>
+</div></div></section><section data-id="d539941afc163a5f7813c7306fe53d7a" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="99b932d2993c619ad03725895f3d3b8a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>What do you mean <span style="color:#000080">non-trivial?</span>
+</h1>
+</div></div></section><section data-id="b3b0e4874c7faaee5cb3dc073b390eca" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 40px; top: 19px; height: auto;" data-block-id="82b8aeeda83bd48ae8b6257e074670bf"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>FLUID <span style="color:#000080">DYNAMICS</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 40px; top: 116px; height: auto;" data-block-id="d0f088a17e30fad1047898ed26556676"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h3>What makes it complex?</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="a123b3f63464868b54a4b4f6f5d49c4e" style="height: auto; min-width: 30px; min-height: 30px; width: 504px; left: 24px; top: 220px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<ul>
+	<li><span style="font-size:0.9em">Water is <span style="color:#000080">denser</span> than air. It<span style="color:#000080"> flows </span>and <span style="color:#000080">changes</span> in a way that developers can animate but often not actually model.</span></li>
+	<li>
+<span style="font-size:0.9em">Things with a greater density are going to sink, while things with lighter density will float.</span><br>
+	&nbsp;</li>
+	<li><span style="font-size:0.9em">Difficult to program: Humans underwater, since the <span style="color:#000080">amount of air</span> in the lungs affect buoyancy.</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="0f04f27cbbbd01f18c7782cc36bb36a7" style="min-width: 30px; min-height: 30px; width: 416px; height: 340px; left: 528px; top: 180px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/BlaringAcceptableJackal" src="./index_files/saved_resource(47).html"></iframe></div></div></section><section data-id="3d85bcc93642925d0eb63651dc664582" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 40px; top: 19px; height: auto;" data-block-id="b5b5f430a66bae1522e13918ac491255"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>Let's talk<span style="color:#000080"> waves</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 40px; top: 116px; height: auto;" data-block-id="1e12b46f0b0e6cfde78ab82996325f6c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h3>What makes it complex?</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 491px; left: 24px; top: 188px;" data-block-id="673b75f4b0d3b719ddc3ee085c232066"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<ul>
+	<li style="font-size:27px">
+<span style="color:#000080">Waves break </span>when the bottom of the wave slows down due to friction on the reef or sand and the top of the wave overtakes it, spilling over the top.<br>
+	&nbsp;</li>
+	<li style="font-size:27px">Problem : this action changes the wave from the simple crest-and-trough formation to a<span style="color:#000080"> more complex</span> one with different parts moving at different speeds. <br>
+	&nbsp;</li>
+	<li style="font-size:27px">Processing power &nbsp;required is immense.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 416px; height: 340px; left: 528px; top: 180px;" data-block-id="23e7fe69ba62d77f3dabdbe690aa9f4b"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/PoisedAbleCony" src="./index_files/saved_resource(48).html"></iframe></div></div></section><section data-id="cfa7f58febd64506caa7f3c3265b2aa9" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 22px; height: auto;" data-block-id="b06f3abeb0555192d0fafd1640d896e2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>
+<span style="color:#000080">CLOTH</span> Simulation</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 120px; height: auto;" data-block-id="5f4203138d86266e396538c29eeef471"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h3>What makes it complex?</h3>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="c0e69b2f824213c6d56c41c2b3843dcf" style="min-width: 30px; min-height: 30px; width: 744px; height: 513px; left: 108px; top: 178px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ForkedDeepIvorygull" src="./index_files/saved_resource(49).html"></iframe></div></div></section><section data-id="84614ad5166f864a385e1a6cc70fc33c" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 22px; height: auto;" data-block-id="72a3790ab54ccd27c282c48feb11f473"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>WELL...</h1>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 472px; height: 400px; left: 451px; top: 70px;" data-block-id="56676eed9031de70ca2d321dd961c17e"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/LankyUnimportantAndeancat" src="./index_files/saved_resource(50).html"></iframe></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="f537a4bddeb3913b3e5d78a523f6296b" style="min-width: 30px; min-height: 30px; width: 388px; height: 354.05px; left: 21px; top: 103px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="400" data-natural-height="365" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3129217/screenshot.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="c0d53f67eb9c886e9db9abfe7baf048c" style="height: auto; min-width: 30px; min-height: 30px; width: 836px; left: 62px; top: 471px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p style="text-align:left"><span style="font-size:0.9em"><span style="color:#000080">Difficult to tune</span> : multiple parameters must be adjusted to achieve the look of a particular fabric.</span></p>
+
+<p style="text-align:left"><span style="font-size:0.9em">Dynamics depend on the <span style="color:#000080">forces</span> acting inside the cloth material. E.g. cloth threads (material, how they're interwoven, age)</span></p>
+</div></div></section><section data-id="ba82119e06a3b0aec8f1256383ffbfb3" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 899px; left: 31px; top: 43px; height: auto;" data-block-id="0f8ac65223f070f8fabcadf2873f85ca"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>
+<span style="color:#000080">MULTIPLE </span>COLLISIONS</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 138px; height: auto;" data-block-id="c5e5eb338e2b2bcae85d18ed0fd41e32"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h3>What makes it complex?</h3>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="cf2798947a160b99ea0f4aaa2b82eb70" style="min-width: 30px; min-height: 30px; width: 705px; height: 472px; left: 129px; top: 203px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/HardHorribleAmericanratsnake" src="./index_files/saved_resource(51).html"></iframe></div></div></section><section data-id="57f39f9bf90d25e9c21469c061a806d9" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 899px; left: 31px; top: 43px; height: auto;" data-block-id="89887e164d06d6df4adcfcedde84c26c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>
+<font color="#000080">HAIR </font>&amp;<font color="#000080"> FUR </font>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 140px; height: auto;" data-block-id="d28c1165f3360e81fb543a58166060eb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<h3>What makes it complex?</h3>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="6078f528aa221a0e663d447c23113668" style="min-width: 30px; min-height: 30px; width: 631px; height: 476px; left: 169px; top: 175px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/DamagedMajesticConey" src="./index_files/saved_resource(52).html"></iframe></div></div></section><section data-id="855a206d42ab42a2aa0b85313900fe56" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 899px; left: 31px; top: 43px; height: auto;" data-block-id="dc79b9d6e0673a9d0f36bb9c3821ec9f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>and more <span style="color:#000080">hair</span>...</h1>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="b25ce0502392aa6571e96d2eda9a4c23" style="min-width: 30px; min-height: 30px; width: 514px; height: 473px; left: 223px; top: 171px;"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/ScentedFatherlyJackrabbit" src="./index_files/saved_resource(53).html"></iframe></div></div></section><section data-id="b9dea65a7e9b177f31ea18d28b60edc8" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 899px; left: 31px; top: 43px; height: auto;" data-block-id="6296ff89afffe092966ba3de0009baac"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>and even more...</h1>
+</div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 828px; height: 796px; left: 80px; top: -8px;" data-block-id="bec388c40edbdbf5b5c0bc0585b59873"><div class="sl-block-content" style="z-index: 0;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/SomeYellowCrayfish" src="./index_files/saved_resource(54).html"></iframe></div></div></section><section data-id="ea4bb5256c86ed674b03f79398519571" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 899px; left: 31px; top: 43px; height: auto;" data-block-id="8aa7b9b7c0da7e8c4d6805b5ff35fa8d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>
+<span style="color:#000080">Folks</span>, let's prevent this :</h1>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="c17536439dfe8f6db1d98ed1f4f52588" style="min-width: 30px; min-height: 30px; width: 627px; height: 384px; left: 222px; top: 298px;"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://abload.de/img/untitled-35as5j.gif" src="./index_files/saved_resource(55).html"></iframe></div></div></section></section><section class="stack future" data-id="390625c5e482c7c3c256808ded552b31" hidden="" aria-hidden="true" style="display: none;"><section data-id="a0b7fdba77131724ca292ae9a10c0793" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="b9b3fe83bfa3366dbec2870ca621416f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>2.</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="1e504cc5b9b9686c2bb03b460c5e9a55"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+<h2>
+<span style="color:#000080">Approximated</span> precision</h2>
+</div></div></section><section data-id="8642099054b1ebbb3187a1b620631049" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 859px; left: 51px; top: 42px; height: auto;" data-block-id="4e4d8144933860e443e89c88da00579e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h2>Simulating every possibility to high precision in real time is...</h2>
+
+<h2><span style="color:#000080">&nbsp;unrealistic</span></h2>
+
+<p>&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="5009bccafe743eed4b868e8dcf91c5f0" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 160px; top: 350px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-duration: 0.6s; transition-delay: 1s;" data-animation-type="slide-down">
+<p><s><span style="color:#000080">( for now )</span></s></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="d5a99ec662f4e6f5f8dc2a40bb9b83c1" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 171px; top: 438px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; transition-duration: 0.6s; transition-delay: 2s;" data-animation-type="slide-down">
+<h3 style="color:rgb(255, 255, 255)"><span style="font-size:0.9em">RESOURCE AND TIME-BASED CONSTRAINTS</span></h3>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:0.9em">Hence: approximations taken instead</span></p>
+</div></div></section><section data-id="d023156cc108066d2dd972044eb12ffe" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 44px; height: auto;" data-block-id="67d691e5c9a93b177842c2700701e760"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>OTher precision <span style="color:#000080">issues</span>:</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: -116px; top: 129px; height: auto;" data-block-id="2f4f1eca249b697da9b17bdc9e1593b5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h3>Entities may be :&nbsp;</h3>
+
+<p>&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="dc07460b18bdc943dd42713c4d7a02d0" style="height: auto; min-width: 30px; min-height: 30px; width: 858px; left: 51px; top: 218px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="slide-right">
+<ol>
+	<li style="text-align:left">
+<span style="font-size:0.9em">Positioned, scaled and rotated based on numerical values that aren't always integers. <span style="color:#000080">Accuracy is lost</span> if rounding occurs mid-calculations.<br>
+	<em>Issue </em>: objects scaled inappropriately or placed wrongly, breaking immersion</span><br>
+	&nbsp;</li>
+	<li style="text-align:left"><span style="font-size:0.9em"><span style="color:#000080">Special variable types</span> might be used e.g. long, double and it may take double the time in length for calculations to be completed on machines that do not support them.<br>
+	<em>Issue :</em> increased load on processing units</span></li>
+</ol>
+</div></div></section></section><section class="stack future" data-id="8734c9b20e1cd0751a7315268e92711b" hidden="" aria-hidden="true" style="display: none;"><section data-id="b69b786c2957def2b8d739f3f16eb401" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="35c289c121ec40912a1a4a589e19d792"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>3.</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="9da794bcab501b81b30446048b3362eb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+<h2>HARDWARE "<span style="color:#000080">Resource</span>" limitations</h2>
+</div></div></section><section data-id="837e29b18f423478f78c42e41a7097f4" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="cd39caacfa10b9ae39861af6ca0b16e4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>
+<span style="color:#000080">About </span>calculations...</h1>
+</div></div></section><section data-id="a24b62dc09393b9bab72207a9eab25a1" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: -203px; top: 64px; height: auto;" data-block-id="9d8dd4e9efa1516d527f45db54b69b46"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>Well...</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="2623a457e5368742de13b35b630e28bd" style="height: auto; min-width: 30px; min-height: 30px; width: 888px; left: 36px; top: 198px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<ol>
+	<li>Issue : <span style="color:#000080">Calculation speed </span>impacting game-play<br>
+	Actions that are expected to take up a short amount of time, actually take longer because of latency during calculations.<br>
+	&nbsp;</li>
+	<li>Objects requiring a large amount of calculations would need hardware capable of making such computations on demand, especially in real-time.<br>
+	<br>
+	Issue :<span style="color:#000080"> It's expensive</span>. Leading to<span style="color:#000080"> trade-offs</span> between performance and costs</li>
+</ol>
+</div></div>
+</section><section data-id="8b45b5320e3957966e1652a87b5b0761" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 928px; left: 32px; top: 31px; height: auto;" data-block-id="7ccf1844de3f98eef0a8c9a31fb9b2b4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>HARDWARE LIMITATIONS</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 96px; top: 226px; height: auto;" data-block-id="5c8000b9b51ac3d1ba998b86651aef20"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3>An example:</h3>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="bee2192c984a2c2845ce2de7e5808aa7" style="min-width: 30px; min-height: 30px; width: 552px; height: 476px; left: -89px; top: 227px;"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/TalkativeRevolvingClingfish" src="./index_files/saved_resource(56).html"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="73d0f98c8eb8eb0b125426515dba07df" style="min-width: 30px; min-height: 30px; width: 554px; height: 411px; left: 505px; top: 259px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://gfycat.com/ifr/WellmadeAccomplishedAfricancivet" src="./index_files/saved_resource(57).html"></iframe></div></div></section></section><section class="stack future" data-id="155043eda43c40bdf7c9ba5fe91ec75f" hidden="" aria-hidden="true" style="display: none;"><section data-id="883f6bf44d104bfd2e8056717335bfc1" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 73px; top: 199px; height: auto;" data-block-id="bb198d8adb9a3b0316cba87859045cd8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Where's the <span style="color:#000080">focus</span> heading?</h1>
+</div></div></section><section data-id="f35d979a47da3c21d6f177adb15443aa" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 68px; top: 140px; height: auto;" data-block-id="37326b95169c1eb001123fdcd7a098cf"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>"game <span style="color:#000080">loop</span>"</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: -140px; top: 350px; height: auto;" data-block-id="f40398ca05d7b4e3763645817936aed2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h2><span style="font-size:0.9em"><span style="color:#000080">single</span> player &nbsp;</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="d7ef8c6d2105e2f305bae698866f18ae" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 400px; top: 351px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h2><span style="font-size:0.9em"><span style="color:#000080">MULTI </span>&nbsp;PLAYER</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="2d60b19495cb625b19239bc3beb9c38b" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: -96px; top: 424px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-duration: 0.6s; transition-delay: 1s;" data-animation-type="slide-right">
+<p>Runs on user's device</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="442e7ac1b109f87524a770cd110d774d" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 407px; top: 424px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; transition-duration: 0.6s; transition-delay: 1s;" data-animation-type="slide-right">
+<p>Split between client : server</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="6c12dbd296ce6d10a02e91dad6897df3" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 89px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<h3>Backtrack :&nbsp;</h3>
+</div></div></section><section data-id="883df0e2d68491f42d0a23e702255d5d" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="57ea24a5fa6bc57753eec6bffa43133c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1><span style="font-size:1.2em">LIMITATION</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 888px; left: 36px; top: 307px; height: auto;" data-block-id="776a02fcb9fd74ad4f34b07dbbfcdde6"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-animation-type="slide-down" style="transition-duration: 0.6s; transition-delay: 0.6s;">
+<h2>
+<span style="color:#000080">entity</span>-<span style="color:#000080">component</span>-system</h2>
+</div></div></section><section data-id="85a3ded695e4691c61646f56a36c820e" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 253px; height: auto;" data-block-id="c1b2fe47b28247afeb9a40804cfde7f3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>SpatIAL<span style="color:#000080">os</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 350px; height: auto;" data-block-id="ad37de75030d48bda7ba9b7b7c9301da"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3>A DISTRIBUTED ENVIRONMENT</h3>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="c57646415228c05c46227c77e4ec01bf" style="min-width: 30px; min-height: 30px; width: 360px; height: 173.52px; left: 300px; top: 130px;"><div class="sl-block-content" style="z-index: 0;"><img data-natural-width="1000" data-natural-height="482" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3129597/pasted-from-clipboard.png"></div></div></section><section data-id="8f042af98a64bd803ca1e0894656ebfc" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="4ace8d4b996d68fbae893efa115acd8f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>A thought :&nbsp;</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 880px; left: 40px; top: 280px; height: auto;" data-block-id="334addc4285d6f3ce43abef7e790c567"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+<h2><span style="font-size:0.9em">entity- component -<span style="color:#000080">worker</span></span></h2>
+</div></div></section><section data-id="8947292be2f5462a5f20a9e7465f83c4" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="image" data-block-id="c9b3ac9ce09d9f04014132cde2b6e0b5" style="min-width: 30px; min-height: 30px; width: 960px; height: 357.6px; left: 0px; top: 140px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="800" data-natural-height="298" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3129688/pasted-from-clipboard.png"></div></div></section></section><section class="stack future" data-id="031db800abbd8e12d73fe740db62ebe6" hidden="" aria-hidden="true" style="display: none;"><section data-id="69a97e4da4fd75113f9116047427979c" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 880px; left: 40px; top: 175px; height: auto;" data-block-id="69a400bf6e96ea403dab177adb5580d6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>THE<br>
+<span style="color:#000080">NEXT</span> GENERATION<br>
+OF GAMES</h1>
+</div></div></section><section data-id="e485649a1a05c3a087c6243be7e7e79f" class="future" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="1c521e90d0c15980a7ab745841a110b3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Worlds adrift</h2>
+</div></div>
+</section></section><section data-id="682804449296f1f4239dc67be67b4de0" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 84px; height: auto;" data-block-id="ba6c97164f20d407756121d05980e6e2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>Reaching "<span style="color:#000080">OASIS</span>"</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="7bd2fd99d896958e39ac15b4e6454574" style="min-width: 30px; min-height: 30px; width: 788px; height: 327.808px; left: 92px; top: 454.596px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1500" data-natural-height="624" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3129716/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 360px; height: 219.167px; left: 92px; top: 217px;" data-block-id="a1c1bc974e960bd5fc097face03f6aad"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="864" data-natural-height="526" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3129710/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="6a8788115f262bafe2c994a678d2369b" style="min-width: 30px; min-height: 30px; width: 375.429px; height: 219px; left: 504px; top: 217px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="600" data-natural-height="350" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3129719/pasted-from-clipboard.png"></div></div></section><section data-id="7d9e1691cddeca569f2d0687a4c5d3b4" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: -125px; top: 35px; height: auto;" data-block-id="3eff87963f88e158f6ed3dc22198b642"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>SUMMARY :</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f43b49a9a05273b1a9bc48a2889aaf11" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 463px; top: 635px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h3><font color="#000080">roh7.co/ve-physics</font></h3>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 135.074px; left: 8px; top: 486px;" data-block-id="0a382f204abea99d79549166b2169cbf"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1600" data-natural-height="602" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121431/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 151.595px; left: 291px; top: 397px;" data-block-id="5a38c0a5d69a9957c0ee89b8f368d9bb"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="476" data-natural-height="201" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121440/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 156.614px; left: -55px; top: 330px;" data-block-id="806e0bcefc134644770ce7f213667d5b"><div class="sl-block-content" style="z-index: 16;"><img data-natural-width="1600" data-natural-height="698" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121444/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 121.836px; left: 563px; top: 149px;" data-block-id="3e9e51415e556a2b7bc918716ea22fb9"><div class="sl-block-content" style="z-index: 17;"><img style="" data-natural-width="1600" data-natural-height="543" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121454/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 132.963px; left: 332px; top: 264px;" data-block-id="be083aab1f17388828cda9c331a782c7"><div class="sl-block-content" style="z-index: 18;"><img data-natural-width="540" data-natural-height="200" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121468/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 155.1px; height: 55px; left: 756px; top: 317px;" data-block-id="a74c036f9b652ec5c78912487962b4bd"><div class="sl-block-content" style="z-index: 19;"><img data-natural-width="141" data-natural-height="50" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121479/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 165.938px; height: 85px; left: 756px; top: 513px;" data-block-id="928c1ab9edc023b93184679271c45890"><div class="sl-block-content" style="z-index: 20;"><img style="" data-natural-width="531" data-natural-height="272" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121490/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 359px; height: 63.8512px; left: 111px; top: 155px;" data-block-id="f4a71e25851e9c64b7952684b658e6a0"><div class="sl-block-content" style="z-index: 21;"><img style="" data-natural-width="551" data-natural-height="98" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121499/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 274.5px; height: 91.5px; left: 23px; top: 243px;" data-block-id="4a6febe2246dc12021f76eea395b7ee5"><div class="sl-block-content" style="z-index: 22;"><img style="" data-natural-width="600" data-natural-height="200" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121508/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 275.312px; height: 92px; left: 438px; top: 532px;" data-block-id="45d287c6a715f03d5671de8ef37c6999"><div class="sl-block-content" style="z-index: 24;"><img data-natural-width="1200" data-natural-height="401" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121570/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 198.839px; height: 67px; left: 720px; top: 414px;" data-block-id="a5161b76ea500a7ad775b42b9ed818b3"><div class="sl-block-content" style="z-index: 25;"><img data-natural-width="184" data-natural-height="62" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/588493/images/3121645/pasted-from-clipboard.png"></div></div></section>
+			</div>
+		<div class="backgrounds"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background stack future" data-loaded="true" style="display: block;"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background future" style="display: none;"></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left" aria-label="previous slide" disabled="disabled"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up" aria-label="above slide" disabled="disabled"></button><button class="navigate-down" aria-label="below slide" disabled="disabled"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">
+Physics Engines
+
+
+
+
+
+
+
+
+
+
+
+
+
+VICTORIA KOH | ROHAN KOPPARAPU | JAZIB MAHBOOB | DANYAAL MASOOD&nbsp;&nbsp; &nbsp;
+
+
+</div></div>
+
+		
+		
+<script>
+	var SLConfig = {"current_user":{"id":298089,"username":"rocket47","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7d53c5c9f0caefec85db4d2fda1f5e6b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","pro":false,"team_id":null,"settings":{"id":126131,"present_controls":true,"present_upsizing":true,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null},"email":"rohankops@gmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":824234,"slug":"deck","title":"phensys","description":"","visibility":"all","published_at":"2016-10-11T15:55:15.491Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/f0e008703958bf76fa32d368a9da2fa8/thumb.jpg","view_count":45,"user":{"id":588493,"username":"virtenv","name":"","description":"","thumbnail_url":"https://www.gravatar.com/avatar/09d3c35f1e2e11d9e17a1ebd74894819?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","pro":false,"team_id":null,"settings":{"id":433903,"present_controls":true,"present_upsizing":true,"present_notes":true}},"background_transition":"concave","transition":"concave","theme_id":null,"theme_font":"quicksand","theme_color":"blue-yellow","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":1,"data_updated_at":1476827270365,"font_typekit":null,"font_google":null,"access_token":"k8kqzQdiFCUpXm4HjjrtVyPMrt4r","notes":{}}};
+</script>
+		<script defer="defer" src="./index_files/application-f784ca6cb5aa1d15c9906b476546ae86.js.download"></script>
+		<script defer="defer" src="./index_files/reveal.min-7e7df91e55fa7d8c3fd4b02febc02eac.js.download"></script>
+		
+
+	
+</body></html>
